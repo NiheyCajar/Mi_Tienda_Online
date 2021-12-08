@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Midicstore</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="scripts.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+	<div class="page-nav">
+		<h1 class="main-header__title">Midicstore</h1>
+		<button id="checkout" class="button-checkout" onclick="pay()"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Pagar</button>
+	</div>
+
+	<div class="Menú">
+      <ul>
+        <li><a class="active"href="">Página principal</a>
+        <li><a href="descripción.html">Descripción de los productos</a>
+        <li><a href="formulario.html">Formulario</a>
+        <li><a href="factura.html">Factura</a>
+      </ul>
+     </div>
+     <h1>Productos</h1>
+	<div class="page-content">
+	    <div class="product-container">
+		    <h3>Glucometro</h3>
+		    <img src="img/product-1.jpeg" /> 
+		    <h2>$30</h2>
+		    <button class="button-add" onclick="add('product-1', 30)"><i class="fa fa-plus" aria-hidden="true"></i>Agregar</button>
+	    </div>
+
+		<div class="product-container">
+		    <h3>Maletin</h3>
+		    <img src="img/product-8.png" />
+		    <h2>$75</h2>
+		    <button class="button-add" onclick="add('product-8', 75)"><i class="fa fa-plus" aria-hidden="true"></i>Agregar</button>
+	    </div>
+
+		<div class="product-container">
+		    <h3>Kit de tensiómetro y estetoscopio</h3>
+		    <img src="img/product-3.jpeg" />
+		    <p></p>
+		    <h2>$45</h2>
+		    <button class="button-add" onclick="add('product-3', 45)"><i class="fa fa-plus" aria-hidden="true"></i>Agregar</button>
+	    </div>
+
+		<div class="product-container">
+		    <h3>Estetoscopio</h3>
+		    <img src="img/product-7.png" />
+		    <h2>$125</h2>
+		    <button class="button-add" onclick="add('product-7', 125)"><i class="fa fa-plus" aria-hidden="true"></i>Agregar</button>
+	    </div>
+        <div class="product-container">
+		    <h3>Cama galaxia</h3>
+		    <img src="img/product-5.png" /> 
+		    <h2>$1,700.00</h2>
+		    <button class="button-add" onclick="add('product-5', 1700.00)"><i class="fa fa-plus" aria-hidden="true"></i>Agregar</button>
+	    </div>
+
+		<div class="product-container">
+		    <h3>Set de laringoscopio</h3>
+		    <img src="img/product-6.jpg" />
+		    <h2>$359.99</h2>
+		    <button class="button-add" onclick="add('product-6', 359.99)"><i class="fa fa-plus" aria-hidden="true"></i>Agregar</button>
+	    </div>
+    </div>
+   <footer class="footer">
+   	      <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+      <div class="h4 title text-center">Mileydi Cajar</div>
+      <div class="text-center text-muted">
+        <p>&copy; Hecho por Mileydi Cajar, 8-974-2081<br></p>
+    </footer>
+</body>
+</html>

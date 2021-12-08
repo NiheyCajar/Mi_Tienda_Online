@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="utf-8">
+   <title>Factura</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script>
+
+
+
+  var idCliente;
+  var nombreCliente ;
+  var direccionCliente; 
+  var telefonoCliente;
+  var nombreProducto;
+  var precio;
+  var cantidad;
+  var total;
+  var subtotal;
+  var p=0;
+  var iva;
+  var subtotalP=0;
+  var fecha= new Date();
+  var imprimir;
+  var numero_Factura=0;
+
+
+function generarFactura(){
+
+  
+  idCliente=document.getElementById("idCliente").value;
+  nombreCliente=document.getElementById("nombreCliente").value;
+  direccionCliente=document.getElementById("direccionCliente").value;
+  telefonoCliente=document.getElementById("telefonoCliente").value;
+
+ 
+  
+  document.write(fecha.getDate() + "/" + (fecha.getMonth()+1) + "/" + fecha.getFullYear()+"</br>"+"</br>"+"</br>");
+  document.write("Identificacion del Cliente:"+'&nbsp;'+idCliente+"<br>"+"<br>");
+  document.write("Nombre del Cliente:"+'&nbsp;'+nombreCliente+"<br>"+"<br>");
+  document.write("Direccion:"+'&nbsp;'+direccionCliente+"<br>"+"<br>");
+  document.write("Telefono:"+'&nbsp;'+telefonoCliente+"<br>"+"<br>"+"<br>");
+  
+  
+for (subtotal=0; nombreProducto != "*"; subtotal++) {
+
+
+nombreProducto=prompt('Ingrese Nombre del Producto');
+document.write("Nombre Producto:  "+'&nbsp;'+nombreProducto+'&nbsp;'+'&nbsp;');
+
+precio=parseFloat(prompt('Ingrese Precio'));
+document.write("Precio:  "+'&nbsp;'+precio+'&nbsp;'+'&nbsp;');
+
+cantidad=parseInt(prompt('Ingrese Cantidad'));
+document.write("Cantidad:  "+'&nbsp;'+cantidad+'&nbsp;'+'&nbsp;');
+
+
+nombreProducto=prompt('Ingrese "*" Para terminar o cualquier tecla para continuar');
+
+  subtotal=precio*cantidad;
+  subtotalP=subtotalP+parseInt(subtotal);
+  ITBMS=subtotalP*0.17;
+  total=subtotalP+ITBMS;
+  
+
+  document.write("SubTotal :"+'&nbsp;'+subtotal+"<br>"+"<br>"+"<br>");
+  
+
+} 
+document.write("Subtotal : "+'&nbsp;'+subtotalP+"<br>"+"<br>");
+document.write("ITBMS 7% :"+'&nbsp;'+ITBMS+"<br>"+"<br>");
+document.write("Total :"+'&nbsp;'+total+"<br>"+"<br>");
+document.write('<button onclick="window.print()">Imprimir Factura</button>');
+
+}
+
+generarFactura()
+
+
+</script>
+</head>
+<body>
+      <div class="page-nav">
+      <h1 class="main-header__title">Midicstore</h1>
+      <button id="checkout" class="button-checkout" onclick="pay()"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Pagar</button>
+   </div>
+   </div>
+     <div class="menú">
+     <ul>
+         <li><a class="active" href="index.html">Página principal</a>
+         <li><a href="descripción">Descripción de los productos</a>
+         <li><a href="formulario.html">Formulario</a>
+         <li><a href="">Factura</a>
+      </ul>
+     </div>
+     <h1>Factura</h1>
+   
+   <div>
+   <h3>Numero Id</h3> 
+   <input type="text" name="idCliente" id="idCliente" placeholder="idCliente"/><br>
+   <h3>Nombre Cliente</h3> 
+   <input type="text" name="nombreCliente" id="nombreCliente" placeholder="Nombre"/><br>
+   <h3>Direccion</h3> 
+   <input type="text" name="direccionCliente" id="direccionCliente" placeholder="Direccion"/><br>
+   <h3>Telefono</h3>   
+   <input type="text" name="telefonoCliente" id="telefonoCliente" placeholder="Telefono"/><br><br>
+   <input type="button"  name="Continuar" onclick="generarFactura()" value="Continuar"/>
+   </div>
+      <footer class="footer">
+      <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+      <div class="h4 title text-center">Mileydi Cajar</div>
+      <div class="text-center text-muted">
+        <p>&copy; Hecho por Mileydi Cajar<br></p>
+      </div>
+    </footer>
+</body>
+</html>
