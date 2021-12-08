@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="utf-8">
+   <title></title>
+   <link rel="stylesheet" href="styles.css">
+   <script src="scripts.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+   <div class="page-nav">
+      <h1 class="main-header__title">Midicstore</h1>
+   </div>
+
+     <div class="menú">
+     <ul>
+         <li><a class="active" href="index.html">Página principal</a>
+         <li><a href="descripción.html">Descripción de los productos</a>
+         <li><a href="">Formulario</a>
+         <li><a href="factura.html">Factura</a>
+      </ul>
+      <br>
+      <br>
+     </div>
+     <h1 style="text-align: center;">Formulario de compra</h1>
+     <br>
+   
+   <form>
+        <div class="campos"> 
+         <div>
+            <label>Nombre completo:</label> 
+            <input type="text" name="nombre" />
+         </div>
+         <br>
+         <div>
+            <label>Apellido completo:</label> 
+            <input type="text" name="apellido"/>
+         </div>
+         <br>
+   <div>
+   <label>Sexo:</label> 
+   <br>
+   <label>Masculino:</label>
+   <input type="radio" name="sexo" value="Masculino" />
+   <br>
+   <label>Femenina:</label>
+   <input type="radio" name="sexo" value="Femenina" />
+   </div>
+   <br>
+   <div>
+      <label>Ciudad de Nacimiento</label>
+      <br>
+      <select name="ciudadnac">
+         <option>Panamá</option>
+         <option>Panamá Oeste</option>
+         <option>Veraguas</option>
+         <option>Chiriquí</option>
+         <option>Bocas del Toro</option>
+         <option>Coclé</option>
+         <option>Los Santos</option>
+         <option>Herrera</option>
+         <option>Colón</option>
+         <option>Darien</option>
+      </select>
+   </div>
+   <br>
+   <div>
+   <label>Teléfono:</label>   
+   <input type="tel" name="telefono"/>
+   </div>
+   <br>
+   <div>
+   <label>Email:</label>   
+   <input type="email" name="email"/>
+   </div>
+   <br>
+   <div class="campos">
+   <input type="submit"  name="Enviar"/>
+   <input type="reset" name="Reset">
+   <button name="guardar">Guardar</button>
+   </div>
+   </div>
+   </form>
+   <footer class="footer">
+      <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+      <div class="h4 title text-center">Mileydi Cajar</div>
+      <div class="text-center text-muted">
+        <p>&copy; Hecho por Mileydi Cajar<br></p>
+      </div>
+    </footer>
+</body>
+</html>

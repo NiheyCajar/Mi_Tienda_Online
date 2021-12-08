@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="utf-8">
+   <title></title>
+   <link rel="stylesheet" href="styles.css">
+   <script src="scripts.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+   <div class="page-nav">
+      <h1 class="main-header__title">Midicstore</h1>
+      <button id="checkout" class="button-checkout" onclick="pay()"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Pagar</button>
+   </div>
+   <div class="menú">
+     <ul>
+         <li><a class="active" href="index.html">Página principal</a>
+         <li><a href="">Descripción de los productos</a>
+         <li><a href="formulario.html">Formulario</a>
+         <li><a href="factura.html">Factura</a>
+      </ul>
+     </div>
+     <h1>Descripción de productos</h1>
+     <div class="page-content">
+       <div class="product-container">
+          <h3>Glucometro</h3>
+          <img src="img/product-1.jpeg" /> 
+          <h2>$30</h2>
+          <p>Muestra: Sangre fresca completa capilar, arterial, venosa, neonatal, pacientes en diálisis, oxígeno terapia.</p> 
+          <p>Rango de medida: 10-600 mg/dl, Volumen de muestra: 0.5 ul,</p> 
+          <p>Detección de muestra insuficiente,</p> 
+          <p>No codificación, Eyector de tiras,</p> 
+          <p>Amplio rango de temperatura y humedad,</p>
+          <p>Memoria: 900 resultados con datos y tiempo.</p>
+          
+          <button class="button-add" onclick="add('product-1', 30)"><i class="fa fa-plus" aria-hidden="true"></i>Agregar</button>
+       </div>
+
+      <div class="product-container">
+          <h3>Maletin</h3>
+          <img src="img/product-8.png" />
+          <h2>$75</h2>
+          <p>Maletín De Trauma. Marca: ADC.</p>
+          <p>Características:</p>
+          <p>Construido en nylon de 600 deniers para una durabilidad resistente.</p>
+          <p>La parte superior con solapa con hebillas de seguridad permite un acceso rápido.</p>
+          <p>Dieciocho portaherramientas interiores elásticos y tres espaciosos compartimentos acolchados.</p>
+          <p>Dos bolsas laterales con cremallera y dos bolsillos plegados frontales.</p>
+          <p>Cinta ajustable y extraíble correa para el hombro y asa contorneada.</p> 
+          <p>Almacenamiento con cremallera dentro de la solapa superior.</p>
+          <p>Mide 17 1/2 "x 9" x 9 ".</p>
+          <p>Pesa 20 oz.</p>
+          <button class="button-add" onclick="add('product-8', 75)"><i class="fa fa-plus" aria-hidden="true"></i>Agregar</button>
+       </div>
+
+      <div class="product-container">
+          <h3>Kit de tensiómetro y estetoscopio</h3>
+          <img src="img/product-3.jpeg" />
+          <h2>$45</h2>
+          <p>Kit De Tensiómetro y Estetoscopio.</p> 
+          <p>Marca: ADC. El kit manual de presión arterial para el hogar más rico en funciones y fácil de usar del mercado.</p>
+          <p>Las características del 6005:</p>
+          <p>El dial presenta números blancos en negrita en la cara negra para una fácil lectura.</p>
+          <p>Anillo en D autoajustable Adcuff ™ para Home ™ para aplicación con una sola mano.</p>
+          <p>El sistema de marcado Size Guide ™ garantiza una precisión óptima.</p>
+          <p>Válvula de desinflado automático.</p>
+          <p>Alcance adjunto de la enfermera.</p>
+          <p>Estuche de transporte con cremallera e instrucciones de funcionamiento.</p>
+          <p>No hecho con látex de caucho natural.</p>
+          <p>Cumple o excede ANSI / AAMI / ISO 81060-1.</p>
+          
+          <button class="button-add" onclick="add('product-3', 45)"><i class="fa fa-plus" aria-hidden="true"></i>Agregar</button>
+       </div>
+
+      <div class="product-container">
+          <h3>Estetoscopio</h3>
+          <img src="img/product-7.png" />
+          <h2>$125</h2>
+          <p>Con el más pequeño de los dos diafragmas se puede auscultar con precisión hasta en las zonas de peor acceso.</p>
+          <p>Los dos conductos interiores en la manguera del estetoscopio reducen al mínimo las pérdidas de sonido. </p>
+          <p>También el resorte integrado de forma independiente en la manguera garantiza una transmisión acústica sin interferencias.</p>
+          
+          <button class="button-add" onclick="add('product-7', 125)"><i class="fa fa-plus" aria-hidden="true"></i>Agregar</button>
+       </div>
+      
+      <div class="product-container">
+          <h3>Cama galaxia</h3>
+          <img src="img/product-5.png" /> 
+         <h2>$1,700.00</h2>
+         <p>Mobiliario práctico y seguro para la recuperación y cuidado de pacientes en hospitalización</p>
+         <p>Estructura fabricada en acero de alta resistencia, acabado: pintura en polvo epoxi poliéster de aplicación electrostática.</p>
+         <p>Cabecero y piecero desmontables en polímero de alto impacto (ABS), con pin de seguridad. </p>
+         <p>Movimientos efectuados por tres maniguetas retráctiles.</p> 
+         <p>Barandas laterales de seguridad de una sección en polímero de alto impacto, con seguro retráctil que permite plegarlas a nivel del tendido.</p>
+         <p>Ruedas en poliuretano de 6” (15.24 cm), libres de mantenimiento con sistema de bloqueo en cada rueda.</p>
+         <button class="button-add" onclick="add('product-5', 1700.00)"><i class="fa fa-plus" aria-hidden="true"></i>Agregar</button>
+       </div>
+
+      <div class="product-container">
+          <h3>Set de laringoscopio</h3>
+          <img src="img/product-6.jpg" />
+          <h2>$359.99</h2>
+          <p>Set De Laringoscopio Miller. Marca: ADC. Surtido completo de cuchillas y mangos de laringoscopio estándar en un estuche ajustado.</p>
+          <p>Características:</p>
+          <p>Cuatro cuchillas (# 1, 2, 3, 4) y 2 manijas (“C” y “AA”) en estuche ajustado. forrado de espuma.</p>
+          <p>Totalmente compatible con todas las principales marcas de laringoscopios de conformidad con ASTM F965 o ISO 7376.</p>
+          <p>Características del set Miller Standard:</p>
+          <p>Cinco cuchillas (# 0, 1, 2, 3, 4) y 2 manijas ("C" y "AA") en una carcasa ajustada forrada de espuma.</p>
+          <p>Totalmente compatible con todas las principales marcas de laringoscopios de conformidad con ASTM F965 o ISO 7376.</p>
+          <p>Característica de cuchillas estándar:</p>
+          <p>Construcción de acero inoxidable con acabado satinado sin brillo.</p>
+          <p>Función de manijas estándar:</p>
+          <p>Manijas de latón cromado satinado con acabado moleteado para un agarre positivo.</p>
+          <p>Disponible en "C" tradicional, "AA" y rechoncho ("AA").</p>
+          <p>Baterías no incluidas.</p>
+          
+          <button class="button-add" onclick="add('product-6', 359.99)"><i class="fa fa-plus" aria-hidden="true"></i>Agregar</button>
+       </div>
+    </div>
+   
+   <footer class="footer">
+      <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+      <div class="h4 title text-center">Mileydi Cajar</div>
+      <div class="text-center text-muted">
+        <p>&copy; Hecho por Mileydi Cajar<br></p>
+      </div>
+    </footer>
+
+</body>
+</html>
